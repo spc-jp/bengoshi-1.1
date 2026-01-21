@@ -877,6 +877,7 @@
                     </div>
                 </summary>
                 <div class="prompt-list">
+                    <!-- 既存 -->
                     <div class="prompt-item">
                         <div class="prompt-label">メール返信（角を立てずに断る）</div>
                         <div class="prompt-content">以下のメールに対し、弁護士として今後の関係を維持しつつ、角が立たないように、かつ明確に依頼を断る返信案を丁寧に作成してください。</div>
@@ -902,6 +903,82 @@
                         <div class="prompt-content">壁打ち相手になってください。私は弁護士で、以下の事件の方針を悩んでいます。相手方代理人になったつもりで、私の主張に対する鋭い反論を5つ挙げてください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
+                    <!-- 新規追加分 -->
+                    <div class="prompt-item">
+                        <div class="prompt-label">相談メモ整理</div>
+                        <div class="prompt-content">以下のメモを、
+・事実関係
+・依頼者の主張
+・法的論点
+・次のアクション
+の4項目に整理してください。
+（ここにメモを貼る）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">依頼者説明の言い換え</div>
+                        <div class="prompt-content">以下の文章を、法律知識のない一般の方にも伝わるように、
+やさしい言葉で言い換えてください。
+（文章）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">内容証明ひな形</div>
+                        <div class="prompt-content">以下の条件で、内容証明郵便のたたき台を作成してください。
+・相手：
+・目的：
+・要求内容：
+・期限：</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">和解案の文章化</div>
+                        <div class="prompt-content">以下の和解条件を、
+当事者双方に配慮した丁寧な文章にまとめてください。
+（条件）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">初回相談ヒアリング</div>
+                        <div class="prompt-content">以下の案件内容をもとに、
+初回相談時に確認すべき質問リストを作成してください。
+（案件概要）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">契約書チェック観点</div>
+                        <div class="prompt-content">以下の契約書について、
+リスクになりやすい条文と確認ポイントを箇条書きで出してください。
+（契約書全文 or 一部）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">準備書面構成案</div>
+                        <div class="prompt-content">以下の案件について、
+準備書面の構成案を見出しレベルで作成してください。
+（案件概要）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">法律コラム案</div>
+                        <div class="prompt-content">一般向けに、
+「〇〇（テーマ）」について
+800文字程度の法律コラム案を作成してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">セミナー構成案</div>
+                        <div class="prompt-content">「〇〇（テーマ）」について
+60分セミナーの構成案を作成してください。
+導入、事例、注意点、まとめの流れでお願いします。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">業務改善アイデア</div>
+                        <div class="prompt-content">弁護士事務所の業務効率を上げるための
+改善アイデアを10個出してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
                 </div>
             </details>
 
@@ -918,29 +995,75 @@
                     </div>
                 </summary>
                 <div class="prompt-list">
+                    <!-- フル差し替え -->
                     <div class="prompt-item">
-                        <div class="prompt-label">最新の法改正チェック</div>
-                        <div class="prompt-content">○○法改正（令和○年・直近のもの）の主な変更点と、弁護士実務への具体的な影響を簡潔にまとめてください。出典も明記してください。</div>
+                        <div class="prompt-label">法改正チェック</div>
+                        <div class="prompt-content">○○法改正（令和○年・直近のもの）の主な変更点と、
+弁護士実務への具体的な影響を簡潔にまとめてください。
+出典URLも併記してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">裁判例の傾向調査</div>
-                        <div class="prompt-content">最近の裁判例において、○○（例：退職代行、SNS誹謗中傷）に関する損害賠償額の認定傾向や判断基準のトレンドを教えてください。</div>
+                        <div class="prompt-label">裁判例トレンド</div>
+                        <div class="prompt-content">最近の裁判例において、
+○○（テーマ）に関する判断傾向や
+損害賠償額の水準を整理してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">法律用語の定義と類語</div>
-                        <div class="prompt-content">以下の法律用語の厳密な定義と、類似する用語（○○と△△）との法的な違いを表形式で解説してください。</div>
+                        <div class="prompt-label">用語定義と違い</div>
+                        <div class="prompt-content">以下の法律用語の定義と、
+類似語との違いを表形式で解説してください。
+（用語）</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">業界動向・ビジネスリサーチ</div>
-                        <div class="prompt-content">○○業界の現在の市場動向、主要プレイヤー、および最近話題になっている法的課題（コンプライアンス、規制など）を調査してください。</div>
+                        <div class="prompt-label">業界別リスク調査</div>
+                        <div class="prompt-content">○○業界で最近問題になっている
+法的リスクやコンプライアンス課題を調査してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">検索キーワードの考案</div>
-                        <div class="prompt-content">このテーマについて判例データベースや文献検索をする際の、効果的な検索キーワードの組み合わせ（AND検索、除外ワード等）を10パターン挙げてください。</div>
+                        <div class="prompt-label">法律ニュース要約</div>
+                        <div class="prompt-content">以下の記事を
+弁護士実務に関係する要点3つに要約してください。
+（記事本文）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">検索キーワード生成</div>
+                        <div class="prompt-content">このテーマについて
+判例データベース検索用の
+効果的な検索キーワードを10個作成してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">海外法リサーチ</div>
+                        <div class="prompt-content">○○国の
+○○分野に関する法制度の概要を
+日本法と比較して整理してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">企業リスク診断</div>
+                        <div class="prompt-content">以下の会社情報から、
+想定される法的リスクを
+カテゴリ別に整理してください。
+（会社概要）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">契約類型比較</div>
+                        <div class="prompt-content">以下の契約類型について、
+メリット・デメリットを表形式で比較してください。
+（契約名）</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">セミナー原稿作成</div>
+                        <div class="prompt-content">「〇〇（テーマ）」の
+セミナースライド原稿を
+10枚分作成してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                 </div>
@@ -959,29 +1082,68 @@
                     </div>
                 </summary>
                 <div class="prompt-list">
+                    <!-- フル差し替え -->
                     <div class="prompt-item">
-                        <div class="prompt-label">資料全体の要約</div>
-                        <div class="prompt-content">アップロードした資料全体を読み込み、事案の概要、当事者の関係、主要な争点を400字程度で要約してください。</div>
+                        <div class="prompt-label">判例要点抽出</div>
+                        <div class="prompt-content">この資料から
+・争点
+・裁判所の判断
+・実務への示唆
+を整理してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">矛盾点の洗い出し</div>
-                        <div class="prompt-content">資料（陳述書や証拠）の中から、原告の主張と被告の主張が食い違っている事実、または整合性が取れていない箇所をリストアップしてください。</div>
+                        <div class="prompt-label">条文テンプレ化</div>
+                        <div class="prompt-content">この資料群から、
+よく使う条文パターンを抜き出してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">時系列表の作成</div>
-                        <div class="prompt-content">資料に含まれるすべての日付と出来事を抽出し、時系列順に並べた表を作成してください。不明確な日付は「頃」として扱ってください。</div>
+                        <div class="prompt-label">セミナー要約</div>
+                        <div class="prompt-content">この資料を
+10分で話せる要点にまとめてください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">不利な条項のチェック</div>
-                        <div class="prompt-content">この契約書（または規約）の条項の中で、依頼者（例：借主側、受注者側）にとって法的に不利になるリスクがある条項、または一般的ではない特約を指摘してください。</div>
+                        <div class="prompt-label">クレーム事例整理</div>
+                        <div class="prompt-content">この事例を
+原因、対応、教訓の3点で整理してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                     <div class="prompt-item">
-                        <div class="prompt-label">尋問・ヒアリング事項案</div>
-                        <div class="prompt-content">資料の内容に基づき、事実関係を明らかにするために相手方（または証人）に対して確認すべき具体的な質問事項を10個案出してください。</div>
+                        <div class="prompt-label">原稿リライト</div>
+                        <div class="prompt-content">この原稿を
+一般向けブログ記事に書き直してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">マニュアル統合</div>
+                        <div class="prompt-content">これらの資料を統合し、
+1本の業務マニュアルにまとめてください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">FAQ生成</div>
+                        <div class="prompt-content">この資料から
+よくある質問と回答を作成してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">研修テスト作成</div>
+                        <div class="prompt-content">この内容をもとに
+研修用の確認テストを作成してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">ナレッジ検索QA</div>
+                        <div class="prompt-content">この資料群から
+〇〇についての要点を教えてください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">顧問契約提案材料</div>
+                        <div class="prompt-content">この会社向けに
+顧問契約提案のポイントを整理してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                 </div>
